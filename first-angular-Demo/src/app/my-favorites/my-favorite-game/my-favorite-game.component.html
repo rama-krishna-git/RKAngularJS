@@ -1,0 +1,23 @@
+<p>
+  This is your favorite card game !
+</p>
+<button [hidden]="gameStarted" button (click)="startTheGame()">Start The Game</button>
+{{ deck | json }}
+<br />
+<br/>
+<div [hidden]="!gameStarted || resultMessage">
+    Guess the second card: <button (click)="compareCard('higher')">Higher</button> &nbsp;&nbsp; <button (click)="compareCard('lower')">Lower</button>
+</div>
+<button [hidden]="!resultMessage" (click)="tryAgain()">Try Again</button>
+<br/>
+<div style="width:500px">
+<div style="float:left">
+    <img src="{{firstCard}}"/>
+</div>
+    <div style="float:left">
+        <img src="{{secondCard}}" />
+    </div>
+</div>
+<br />
+
+<h3 style="clear:both">{{resultMessage}}</h3> 
