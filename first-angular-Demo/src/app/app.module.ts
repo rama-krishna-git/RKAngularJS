@@ -1,3 +1,5 @@
+import 'hammerjs'
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -12,6 +14,9 @@ import { MyFavoriteMovieComponent } from './my-favorites/my-favorite-movie/my-fa
 import { MyFavoriteGameComponent } from './my-favorites/my-favorite-game/my-favorite-game.component';
 
 */
+
+import { MaterialModule  } from '@angular/material';
+
 const APP_ROUTES : Routes = [
   {path: 'my-favorite',loadChildren:'./my-favorites/my-favorites.module#MyFavoritesModule'}
 
@@ -23,7 +28,6 @@ const APP_ROUTES : Routes = [
 ];
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +36,7 @@ const APP_ROUTES : Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
+	MaterialModule,
 	RouterModule.forRoot(APP_ROUTES)
   ],
   providers: [],

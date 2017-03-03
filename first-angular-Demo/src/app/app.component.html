@@ -4,6 +4,22 @@
 
 <br />
 
+<md-toolbar color="primary">
+    <span>Theme</span>
+    <span class="spacer"></span>
+    <button md-icon-button>
+      <md-icon>more_vert</md-icon>
+    </button>
+    <md-menu #menu="mdMenu">
+      <button md-menu-item>
+       <span>Blue</span>
+      </button>
+      <button md-menu-item>
+        <span>Green</span>
+      </button>
+    </md-menu>
+</md-toolbar>
+
 <nav>
     <a routerLink="/my-favorite/movie" routerLinkActive="active">My Favorite Movie</a>
     &nbsp; &nbsp; &nbsp;

@@ -1,3 +1,22 @@
-<p>
-  my-favorite-movie works!
+<h2>My Favorite Movie</h2>
+
+{{ myMovie | json }}
+
+<h3>
+  {{ movieTitle }}
+</h3>
+<span><b>genres:</b> </span> {{ movieGenre }}
+<img src='http://image.tmdb.org/t/p/w185{{moviePoster}}' /> <br /> <br />
+<p>STORY: <br />
+{{movieStory}}
 </p>
+
+<md-grid-list cols="4">
+  <md-grid-tile 
+      *ngFor="let cast of movieCast">
+   <a href='https://www.themoviedb.org/person/{{cast.id}}' target="_blank">
+   <img src='http://image.tmdb.org/t/p/w185/{{cast.profile_path}}' /></a>
+   <md-grid-tile-footer>{{cast.name}}</md-grid-tile-footer>
+  </md-grid-tile>
+  
+</md-grid-list>

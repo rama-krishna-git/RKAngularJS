@@ -1,27 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "first-angular-Demo", "http://localhost:53466", "{2E77E47C-7607-4124-B07E-D9C02776710C}"
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "first-angular-Demo", "first-angular-Demo\", "{B8BE4244-7E9C-4D13-92C1-25EF18E4F01C}"
 	ProjectSection(WebsiteProperties) = preProject
-		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_53466"
+		Debug.AspNetCompiler.VirtualPath = "/first-angular-Demo"
 		Debug.AspNetCompiler.PhysicalPath = "first-angular-Demo\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53466\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\first-angular-Demo\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_53466"
+		Release.AspNetCompiler.VirtualPath = "/first-angular-Demo"
 		Release.AspNetCompiler.PhysicalPath = "first-angular-Demo\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53466\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\first-angular-Demo\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "first-angular-Demo\"
+		VWDPort = "1287"
 	EndProjectSection
 EndProject
 Global
@@ -29,8 +26,8 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2E77E47C-7607-4124-B07E-D9C02776710C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2E77E47C-7607-4124-B07E-D9C02776710C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8BE4244-7E9C-4D13-92C1-25EF18E4F01C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8BE4244-7E9C-4D13-92C1-25EF18E4F01C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

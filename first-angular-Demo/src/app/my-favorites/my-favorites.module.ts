@@ -6,6 +6,8 @@ import { HttpModule, JsonpModule } from '@angular/http';
 import { MyFavoriteMovieComponent } from './my-favorite-movie/my-favorite-movie.component';
 import { MyFavoriteGameComponent } from './my-favorite-game/my-favorite-game.component';
 
+import { MaterialModule  } from '@angular/material';
+
 const Child_ROUTES : Routes = [
   /*{ path: '', redirectTo: '/my-favorite',pathMatch: 'full' },*/
   { path: 'movie',		component: MyFavoriteMovieComponent },
@@ -17,6 +19,7 @@ const Child_ROUTES : Routes = [
     CommonModule,
 	HttpModule,
     JsonpModule,
+	MaterialModule,
 	RouterModule.forChild(Child_ROUTES)
   ],
   declarations: [   MyFavoriteMovieComponent,MyFavoriteGameComponent]

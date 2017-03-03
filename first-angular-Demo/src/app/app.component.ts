@@ -8,4 +8,9 @@ import { RouterModule } from '@angular/router';
 })
 export class AppComponent {
   title = 'First Angular Demo !';
+
+  changeTheme(themeID)
+  {
+	alert(themeID);
+  }
 }

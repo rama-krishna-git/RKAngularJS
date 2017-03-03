@@ -4,6 +4,8 @@ import { Observable } from 'rxjs/Observable';
 import { appDataService } from '../app-data.service';
 import { DeckEntity } from './DeckEntity';
 import { CardEntity } from './CardEntity';
+/*import {MdGridListModule} from '@angular2-material/gridlist/gridlist';*/
+ 
 
 @Component({
   selector: 'app-my-favorite-game',

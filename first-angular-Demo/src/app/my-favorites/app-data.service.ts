@@ -21,4 +21,18 @@ export class appDataService {
 	return this.http.get(url).map(
 	(res)=> res.json());
   }
+
+  getMovieDetails(movieID)
+  {
+	var url = 'https://api.themoviedb.org/3/movie/'+movieID+'?api_key=9d8b3d937e509a6d7224c01875f800ae'
+	return this.http.get(url).map(
+	(res)=> res.json());
+  }
+
+  getMovieCast(movieID)
+  {
+	var url = 'https://api.themoviedb.org/3/movie/'+movieID+'/credits?api_key=9d8b3d937e509a6d7224c01875f800ae'
+	return this.http.get(url).map(
+	(res)=> res.json());
+  }
 }
